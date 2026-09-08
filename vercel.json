@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/css/(.*)", "destination": "/wwwroot/css/$1" },
+    { "source": "/js/(.*)", "destination": "/wwwroot/js/$1" },
+    { "source": "/(.*)", "destination": "/wwwroot/index.html" }
+  ]
+}
