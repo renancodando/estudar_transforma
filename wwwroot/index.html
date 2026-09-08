@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b2c25">
+  <meta name="description" content="Biblioteca Livre — pesquise livros em múltiplas fontes abertas, leia e encontre edições digitais.">
+  <title>Biblioteca Livre — conhecimento sem barreiras</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <canvas id="cena3d" aria-hidden="true"></canvas>
+  <div class="nevoa" aria-hidden="true"></div>
+
+  <header class="cabecalho" id="cabecalho">
+    <a class="marca" href="#/" aria-label="Biblioteca Livre - início">
+      <span class="marca-arvore" aria-hidden="true">♧</span>
+      <span><strong>BIBLIOTECA LIVRE</strong><small>LIVROS PARA UM MUNDO MAIS CONSCIENTE</small></span>
+    </a>
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#/" data-nav="inicio">Início</a>
+      <a href="#/explorar" data-nav="explorar">Explorar</a>
+      <a href="#/dominio-publico" data-nav="dominio">Domínio Público</a>
+      <button class="nav-botao" data-acao="busca-profunda">Busca Profunda</button>
+      <a href="#/manifesto" data-nav="manifesto">Manifesto</a>
+      <button class="nav-botao" data-acao="sobre-fontes">Sobre as Fontes</button>
+    </nav>
+    <div class="acoes-topo">
+      <button class="icone-botao" data-acao="abrir-busca" aria-label="Pesquisar">⌕</button>
+      <button class="icone-botao" data-acao="alternar-movimento" aria-label="Pausar ou ativar animações">◐</button>
+      <button class="icone-botao menu-mobile" data-acao="menu" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="rodape">
+    <div><strong>BIBLIOTECA LIVRE</strong><span>Conhecimento acessível cria possibilidades.</span></div>
+    <p>Leitura é liberdade. <i></i> Cultura é resistência. <i></i> Conhecimento é futuro.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal" aria-hidden="true"></div>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/cena3d.js"></script>
+</body>
+</html>
